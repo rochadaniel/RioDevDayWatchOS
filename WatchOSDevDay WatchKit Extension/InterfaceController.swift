@@ -33,6 +33,11 @@ class InterfaceController: WKInterfaceController {
                 rowController.label.setText(myArray[index])
             }
         }
+        
+    }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        pushController(withName: "MyNavigation", context: ["parametro1", "parametro2"])
     }
     
     override func willActivate() {

@@ -32,6 +32,13 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
+        <!--Oi-->
+        <scene sceneID="Y4r-Ur-CQf">
+            <objects>
+                <controller identifier="MyNavigation" title="Oi" id="ziZ-PR-g1Q" customClass="MyNavigationController" customModule="WatchOSDevDay_WatchKit_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="345"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
