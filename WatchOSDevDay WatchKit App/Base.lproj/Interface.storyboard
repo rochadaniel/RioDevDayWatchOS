@@ -42,7 +42,11 @@
                                 <segue destination="C9c-b6-fCM" kind="push" id="BQP-as-qdT"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Movendo botão" id="ifK-Fl-I4S"/>
+                        <button width="1" alignment="left" title="Movendo botão" id="ifK-Fl-I4S">
+                            <connections>
+                                <segue destination="AFw-Gr-c1K" kind="push" id="rYM-m0-FCu"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -78,6 +82,31 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="766" y="345"/>
+        </scene>
+        <!--ButtonAnim-->
+        <scene sceneID="9hC-aZ-qw5">
+            <objects>
+                <controller identifier="ButtonAnim" id="AFw-Gr-c1K" customClass="ButtonAnimController" customModule="WatchOSDevDay_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="Vjf-Iz-QGH">
+                            <items>
+                                <group width="40" height="40" alignment="left" radius="20" id="vew-0g-9MX">
+                                    <color key="backgroundColor" red="1" green="0.062642920609741415" blue="0.1016760448367301" alpha="1" colorSpace="calibratedRGB"/>
+                                </group>
+                                <group width="1" alignment="left" verticalAlignment="bottom" id="7Iv-jW-xES">
+                                    <items>
+                                        <button width="0.25" alignment="left" title="←" id="QPK-AS-nZM"/>
+                                        <button width="0.25" alignment="left" title="→" id="QAo-ig-eRi"/>
+                                        <button width="0.25" alignment="left" title="↑" id="N9k-12-52I"/>
+                                        <button width="0.25" alignment="left" title="↓" id="XK6-7D-tJh"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="766" y="638"/>
         </scene>
         <!--Titulo Navigation-->
         <scene sceneID="Y4r-Ur-CQf">
@@ -134,14 +163,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="187" y="959"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchOSDevDay_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="435" y="959"/>
         </scene>
     </scenes>
 </document>

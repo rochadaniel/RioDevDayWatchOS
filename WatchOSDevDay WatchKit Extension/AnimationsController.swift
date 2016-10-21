@@ -11,7 +11,7 @@ import Foundation
 
 
 class AnimationsController: WKInterfaceController {
-
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -28,4 +28,5 @@ class AnimationsController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    
 }
