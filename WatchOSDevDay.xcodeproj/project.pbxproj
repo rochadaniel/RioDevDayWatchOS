@@ -20,6 +20,7 @@
 		B3CBD3851DBA404400F37D7D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD3841DBA404400F37D7D /* ExtensionDelegate.swift */; };
 		B3CBD3871DBA404400F37D7D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD3861DBA404400F37D7D /* NotificationController.swift */; };
 		B3CBD3891DBA404400F37D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD3881DBA404400F37D7D /* Assets.xcassets */; };
+		B3CBD3991DBA40CB00F37D7D /* MyTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD3981DBA40CB00F37D7D /* MyTableRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		B3CBD3861DBA404400F37D7D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		B3CBD3881DBA404400F37D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3CBD38A1DBA404400F37D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CBD3981DBA40CB00F37D7D /* MyTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				B3CBD3881DBA404400F37D7D /* Assets.xcassets */,
 				B3CBD38A1DBA404400F37D7D /* Info.plist */,
 				B3CBD3801DBA404400F37D7D /* Supporting Files */,
+				B3CBD3981DBA40CB00F37D7D /* MyTableRowController.swift */,
 			);
 			path = "WatchOSDevDay WatchKit Extension";
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				B3CBD3871DBA404400F37D7D /* NotificationController.swift in Sources */,
 				B3CBD3851DBA404400F37D7D /* ExtensionDelegate.swift in Sources */,
 				B3CBD3831DBA404400F37D7D /* InterfaceController.swift in Sources */,
+				B3CBD3991DBA40CB00F37D7D /* MyTableRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

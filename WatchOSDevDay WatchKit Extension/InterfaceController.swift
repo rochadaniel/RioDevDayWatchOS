@@ -12,10 +12,23 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var myTable: WKInterfaceTable!
+    
+    let myArray: [String] = ["Navigation", "Animations", "Communication", "Notifications"]
+    
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        
+        myTable.setNumberOfRows(myArray.count, withRowType: "myTableRow")
+        
+        for index in 0..<myArray.count {
+            if let rowController = myTable.rowController(at: index) as? MyTableRowController {
+                rowController.label.setText(myArray[index])
+            }
+        }
     }
     
     override func willActivate() {
