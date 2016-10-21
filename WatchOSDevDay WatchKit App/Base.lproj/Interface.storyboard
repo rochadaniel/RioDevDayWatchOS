@@ -32,12 +32,46 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Oi-->
+        <!--Titulo-->
         <scene sceneID="Y4r-Ur-CQf">
             <objects>
-                <controller identifier="MyNavigation" title="Oi" id="ziZ-PR-g1Q" customClass="MyNavigationController" customModule="WatchOSDevDay_WatchKit_Extension"/>
+                <controller identifier="MyNavigation" title="Titulo" id="ziZ-PR-g1Q" customClass="MyNavigationController" customModule="WatchOSDevDay_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" id="DWj-KL-fC6"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Page-Based" id="Ghc-FA-FEg">
+                            <connections>
+                                <action selector="buttonClick" destination="ziZ-PR-g1Q" id="318-oe-6yO"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="label" destination="DWj-KL-fC6" id="wVi-W9-CPn"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="458" y="345"/>
+            <point key="canvasLocation" x="478" y="345"/>
+        </scene>
+        <!--pagebased1-->
+        <scene sceneID="tSA-qC-tuf">
+            <objects>
+                <controller identifier="pagebased1" id="XDl-RZ-rnS">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Tela 1" id="h1q-jI-Rqz"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="776" y="345"/>
+        </scene>
+        <!--pagebased2-->
+        <scene sceneID="ZDv-dA-Miq">
+            <objects>
+                <controller identifier="pagebased2" id="9aS-1e-wdv">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Tela 2" id="JXb-EI-DE9"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1003" y="345"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

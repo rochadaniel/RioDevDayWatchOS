@@ -21,11 +21,13 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        
         configTable()
     }
     
+    // Configurações da tabela
     func configTable() {
+        
+        //seta o numero de linhas
         myTable.setNumberOfRows(myArray.count, withRowType: "myTableRow")
         
         for index in 0..<myArray.count {
@@ -37,6 +39,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        //Chama uma nova tela
         pushController(withName: "MyNavigation", context: ["parametro1", "parametro2"])
     }
     

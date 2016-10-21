@@ -12,11 +12,13 @@ import Foundation
 
 class MyNavigationController: WKInterfaceController {
 
+    @IBOutlet var label: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         if let params = context as? [String] {
-                print(params[0])
+                label.setText(params[0])
         }
         
         // Configure interface objects here.
@@ -31,5 +33,11 @@ class MyNavigationController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+    @IBAction func buttonClick() {
+        //Chama uma nova tela (modal)
+        presentController(withNames: ["pagebased1", "pagebased2"], contexts: nil)
+    }
+    
 
 }
