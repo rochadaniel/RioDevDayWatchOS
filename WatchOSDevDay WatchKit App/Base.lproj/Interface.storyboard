@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
@@ -95,15 +95,34 @@
                                 </group>
                                 <group width="1" alignment="left" verticalAlignment="bottom" id="7Iv-jW-xES">
                                     <items>
-                                        <button width="0.25" alignment="left" title="←" id="QPK-AS-nZM"/>
-                                        <button width="0.25" alignment="left" title="→" id="QAo-ig-eRi"/>
-                                        <button width="0.25" alignment="left" title="↑" id="N9k-12-52I"/>
-                                        <button width="0.25" alignment="left" title="↓" id="XK6-7D-tJh"/>
+                                        <button width="0.25" alignment="left" title="←" id="QPK-AS-nZM">
+                                            <connections>
+                                                <action selector="leftClick" destination="AFw-Gr-c1K" id="Wm1-Tf-9Li"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="→" id="QAo-ig-eRi">
+                                            <connections>
+                                                <action selector="rightClick" destination="AFw-Gr-c1K" id="vAY-4L-Plt"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="↑" id="N9k-12-52I">
+                                            <connections>
+                                                <action selector="topClick" destination="AFw-Gr-c1K" id="8IU-8p-UTz"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.25" alignment="left" title="↓" id="XK6-7D-tJh">
+                                            <connections>
+                                                <action selector="bottomClick" destination="AFw-Gr-c1K" id="pXA-xX-9fD"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="circle" destination="vew-0g-9MX" id="6XY-c1-gEq"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="766" y="638"/>

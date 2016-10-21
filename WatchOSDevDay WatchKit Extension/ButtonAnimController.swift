@@ -14,6 +14,8 @@ class ButtonAnimController: WKInterfaceController {
 
     // ←, →, ↑, e ↓
     
+    @IBOutlet var circle: WKInterfaceGroup!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -30,6 +32,30 @@ class ButtonAnimController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    @IBAction func leftClick() {
+        animate(withDuration: 0.3) { 
+            self.circle.setHorizontalAlignment(.left)
+        }
+    }
+    
+    @IBAction func topClick() {
+        animate(withDuration: 0.3) {
+            self.circle.setVerticalAlignment(.top)
+        }
+    }
+    
+    @IBAction func rightClick() {
+        animate(withDuration: 0.3) {
+            self.circle.setHorizontalAlignment(.right)
+        }
+    }
+    
+    @IBAction func bottomClick() {
+        animate(withDuration: 0.3) {
+            self.circle.setVerticalAlignment(.bottom)
+        }
+        
+    }
     //obs.: Ainda nao existe, oficialmente, um jeito de realizar uma função no final da animação
 //    func animateWithCompletion(duration: TimeInterval, customAnimation: () -> Void, completion: (() -> Void)?) {
 //        
