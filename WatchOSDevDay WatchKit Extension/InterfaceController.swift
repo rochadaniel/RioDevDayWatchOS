@@ -22,6 +22,10 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         
+        configTable()
+    }
+    
+    func configTable() {
         myTable.setNumberOfRows(myArray.count, withRowType: "myTableRow")
         
         for index in 0..<myArray.count {

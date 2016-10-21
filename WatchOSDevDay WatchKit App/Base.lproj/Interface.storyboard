@@ -15,7 +15,7 @@
                                 <tableRow identifier="myTableRow" id="VXg-jh-8GF" customClass="MyTableRowController" customModule="WatchOSDevDay_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="pzw-ke-76b">
                                         <items>
-                                            <label alignment="left" text="Label" id="AKT-Ld-hWA"/>
+                                            <label alignment="center" verticalAlignment="center" text="Label" textAlignment="left" id="AKT-Ld-hWA"/>
                                         </items>
                                     </group>
                                     <connections>
