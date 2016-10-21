@@ -32,10 +32,57 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
-        <!--Titulo-->
+        <!--Animations-->
+        <scene sceneID="a9x-g4-Xi7">
+            <objects>
+                <controller identifier="Animations" id="dzL-U6-cPa" customClass="AnimationsController" customModule="WatchOSDevDay_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Movendo texto" id="Fzn-CG-umt">
+                            <connections>
+                                <segue destination="C9c-b6-fCM" kind="push" id="BQP-as-qdT"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Movendo botão" id="ifK-Fl-I4S"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="467" y="350"/>
+        </scene>
+        <!--LabelAnim-->
+        <scene sceneID="RfI-5T-oss">
+            <objects>
+                <controller identifier="LabelAnim" id="C9c-b6-fCM" customClass="LabelAnimController" customModule="WatchOSDevDay_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="z76-Um-oud">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="gdg-program-icon" id="pKw-Cv-laP"/>
+                                <group width="120" alignment="left" id="Rdb-Se-2x7"/>
+                                <label alignment="left" verticalAlignment="center" text="Label" id="s8Z-PP-GGu"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Animar" id="cbU-00-khM">
+                            <connections>
+                                <action selector="animClick" destination="C9c-b6-fCM" id="HMr-z4-GX7"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Resetar" id="8Jj-id-mah">
+                            <connections>
+                                <action selector="resetClick" destination="C9c-b6-fCM" id="2Nr-Y0-RJI"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="myLabel" destination="s8Z-PP-GGu" id="MTU-qx-FlD"/>
+                        <outlet property="spaceGroup" destination="Rdb-Se-2x7" id="evW-Ye-CHD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="766" y="345"/>
+        </scene>
+        <!--Titulo Navigation-->
         <scene sceneID="Y4r-Ur-CQf">
             <objects>
-                <controller identifier="MyNavigation" title="Titulo" id="ziZ-PR-g1Q" customClass="MyNavigationController" customModule="WatchOSDevDay_WatchKit_Extension">
+                <controller identifier="MyNavigation" title="Titulo Navigation" id="ziZ-PR-g1Q" customClass="MyNavigationController" customModule="WatchOSDevDay_WatchKit_Extension">
                     <items>
                         <label alignment="center" verticalAlignment="center" text="Label" id="DWj-KL-fC6"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Page-Based" id="Ghc-FA-FEg">
@@ -49,7 +96,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="478" y="345"/>
+            <point key="canvasLocation" x="468" y="14"/>
         </scene>
         <!--pagebased1-->
         <scene sceneID="tSA-qC-tuf">
@@ -60,7 +107,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="776" y="345"/>
+            <point key="canvasLocation" x="766" y="14"/>
         </scene>
         <!--pagebased2-->
         <scene sceneID="ZDv-dA-Miq">
@@ -71,7 +118,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1003" y="345"/>
+            <point key="canvasLocation" x="993" y="14"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

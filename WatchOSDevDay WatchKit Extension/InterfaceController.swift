@@ -40,7 +40,15 @@ class InterfaceController: WKInterfaceController {
     
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         //Chama uma nova tela
-        pushController(withName: "MyNavigation", context: ["parametro1", "parametro2"])
+        switch rowIndex {
+        case 0:
+            pushController(withName: "MyNavigation", context: ["parametro1", "parametro2"])
+        case 1:
+            pushController(withName: "Animations", context: nil)
+        default:
+            print(":(")
+            
+        }
     }
     
     override func willActivate() {

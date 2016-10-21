@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B38697CC1DBA88D50071A7FD /* AnimationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38697CB1DBA88D50071A7FD /* AnimationsController.swift */; };
+		B38697CE1DBA8BEC0071A7FD /* LabelAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38697CD1DBA8BEC0071A7FD /* LabelAnimController.swift */; };
 		B3CBD35E1DBA404400F37D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD35D1DBA404400F37D7D /* AppDelegate.swift */; };
 		B3CBD3601DBA404400F37D7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD35F1DBA404400F37D7D /* ViewController.swift */; };
 		B3CBD3631DBA404400F37D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD3611DBA404400F37D7D /* Main.storyboard */; };
@@ -67,6 +69,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B38697CB1DBA88D50071A7FD /* AnimationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsController.swift; sourceTree = "<group>"; };
+		B38697CD1DBA8BEC0071A7FD /* LabelAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAnimController.swift; sourceTree = "<group>"; };
 		B3CBD35A1DBA404400F37D7D /* WatchOSDevDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOSDevDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3CBD35D1DBA404400F37D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3CBD35F1DBA404400F37D7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				B3CBD3801DBA404400F37D7D /* Supporting Files */,
 				B3CBD3981DBA40CB00F37D7D /* MyTableRowController.swift */,
 				B3CBD39A1DBA45DE00F37D7D /* MyNavigationController.swift */,
+				B38697CB1DBA88D50071A7FD /* AnimationsController.swift */,
+				B38697CD1DBA8BEC0071A7FD /* LabelAnimController.swift */,
 			);
 			path = "WatchOSDevDay WatchKit Extension";
 			sourceTree = "<group>";
@@ -324,6 +330,8 @@
 				B3CBD3851DBA404400F37D7D /* ExtensionDelegate.swift in Sources */,
 				B3CBD3831DBA404400F37D7D /* InterfaceController.swift in Sources */,
 				B3CBD39B1DBA45DE00F37D7D /* MyNavigationController.swift in Sources */,
+				B38697CC1DBA88D50071A7FD /* AnimationsController.swift in Sources */,
+				B38697CE1DBA8BEC0071A7FD /* LabelAnimController.swift in Sources */,
 				B3CBD3991DBA40CB00F37D7D /* MyTableRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,6 +587,7 @@
 				B3CBD38F1DBA404400F37D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3CBD3911DBA404400F37D7D /* Build configuration list for PBXNativeTarget "WatchOSDevDay WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +596,7 @@
 				B3CBD3931DBA404400F37D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3CBD3951DBA404400F37D7D /* Build configuration list for PBXNativeTarget "WatchOSDevDay" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +605,7 @@
 				B3CBD3971DBA404400F37D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
