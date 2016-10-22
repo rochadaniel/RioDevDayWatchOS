@@ -25,12 +25,21 @@
                             </items>
                         </table>
                     </items>
+                    <menu key="menu" id="yoS-Uj-k7k">
+                        <items>
+                            <menuItem title="Ok" icon="accept" id="mDt-Bn-J0I">
+                                <connections>
+                                    <action selector="okClick" destination="AgC-eL-Hgc" id="aOI-ow-vMm"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="myTable" destination="Cni-vo-2A1" id="Mur-qn-c0o"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219" y="350"/>
         </scene>
         <!--Animations-->
         <scene sceneID="a9x-g4-Xi7">

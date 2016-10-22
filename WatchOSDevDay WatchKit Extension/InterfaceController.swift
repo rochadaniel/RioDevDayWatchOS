@@ -67,6 +67,14 @@ class InterfaceController: WKInterfaceController {
         print("didDeactivate")
     }
     
+    @IBAction func okClick() {
+        
+        let myAction: WKAlertAction = WKAlertAction(title: "action1", style: .default, handler: {() -> Void in
+                print("click")
+            })
+        
+        self.presentAlert(withTitle: "Titulo", message: "msg", preferredStyle: .actionSheet, actions: [myAction])
+    }
     
 
 }

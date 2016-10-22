@@ -253,17 +253,17 @@
 				TargetAttributes = {
 					B3CBD3591DBA404400F37D7D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7FX2D33UK4;
+						DevelopmentTeam = 2GARH944G4;
 						ProvisioningStyle = Automatic;
 					};
 					B3CBD36B1DBA404400F37D7D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7FX2D33UK4;
+						DevelopmentTeam = 2GARH944G4;
 						ProvisioningStyle = Automatic;
 					};
 					B3CBD37A1DBA404400F37D7D = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7FX2D33UK4;
+						DevelopmentTeam = 2GARH944G4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -484,7 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 7FX2D33UK4;
+				DEVELOPMENT_TEAM = 2GARH944G4;
 				INFOPLIST_FILE = "WatchOSDevDay WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.WatchOSDevDay.watchkitapp.watchkitextension;
@@ -501,7 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 7FX2D33UK4;
+				DEVELOPMENT_TEAM = 2GARH944G4;
 				INFOPLIST_FILE = "WatchOSDevDay WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.WatchOSDevDay.watchkitapp.watchkitextension;
@@ -519,7 +519,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7FX2D33UK4;
+				DEVELOPMENT_TEAM = 2GARH944G4;
 				IBSC_MODULE = WatchOSDevDay_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchOSDevDay WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.WatchOSDevDay.watchkitapp;
@@ -537,7 +537,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7FX2D33UK4;
+				DEVELOPMENT_TEAM = 2GARH944G4;
 				IBSC_MODULE = WatchOSDevDay_WatchKit_Extension;
 				INFOPLIST_FILE = "WatchOSDevDay WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.WatchOSDevDay.watchkitapp;
@@ -554,7 +554,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7FX2D33UK4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2GARH944G4;
 				INFOPLIST_FILE = WatchOSDevDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.WatchOSDevDay;
@@ -567,7 +568,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7FX2D33UK4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 2GARH944G4;
 				INFOPLIST_FILE = WatchOSDevDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.WatchOSDevDay;
