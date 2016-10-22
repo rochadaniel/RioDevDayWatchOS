@@ -45,6 +45,10 @@ class InterfaceController: WKInterfaceController {
             pushController(withName: "MyNavigation", context: ["parametro1", "parametro2"])
         case 1:
             pushController(withName: "Animations", context: nil)
+            
+        case 2:
+            pushController(withName: "Communication", context: nil)
+            
         default:
             print(":(")
             

@@ -182,14 +182,29 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="187" y="959"/>
+            <point key="canvasLocation" x="192" y="1220"/>
+        </scene>
+        <!--Communication-->
+        <scene sceneID="5zr-WS-9xh">
+            <objects>
+                <controller identifier="Communication" id="dBC-iO-xLh" customClass="CommunicationController" customModule="WatchOSDevDay_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Enviar texto" id="t9V-CC-UNP">
+                            <connections>
+                                <action selector="sendText" destination="dBC-iO-xLh" id="NWD-VU-Llq"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="477" y="886"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchOSDevDay_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="435" y="959"/>
+            <point key="canvasLocation" x="440" y="1220"/>
         </scene>
     </scenes>
 </document>

@@ -10,6 +10,7 @@
 		B38697CC1DBA88D50071A7FD /* AnimationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38697CB1DBA88D50071A7FD /* AnimationsController.swift */; };
 		B38697CE1DBA8BEC0071A7FD /* LabelAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38697CD1DBA8BEC0071A7FD /* LabelAnimController.swift */; };
 		B38697D01DBA90FC0071A7FD /* ButtonAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38697CF1DBA90FC0071A7FD /* ButtonAnimController.swift */; };
+		B3A762541DBAF92E008027BE /* CommunicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A762531DBAF92E008027BE /* CommunicationController.swift */; };
 		B3CBD35E1DBA404400F37D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD35D1DBA404400F37D7D /* AppDelegate.swift */; };
 		B3CBD3601DBA404400F37D7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CBD35F1DBA404400F37D7D /* ViewController.swift */; };
 		B3CBD3631DBA404400F37D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CBD3611DBA404400F37D7D /* Main.storyboard */; };
@@ -73,6 +74,7 @@
 		B38697CB1DBA88D50071A7FD /* AnimationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationsController.swift; sourceTree = "<group>"; };
 		B38697CD1DBA8BEC0071A7FD /* LabelAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelAnimController.swift; sourceTree = "<group>"; };
 		B38697CF1DBA90FC0071A7FD /* ButtonAnimController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonAnimController.swift; sourceTree = "<group>"; };
+		B3A762531DBAF92E008027BE /* CommunicationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationController.swift; sourceTree = "<group>"; };
 		B3CBD35A1DBA404400F37D7D /* WatchOSDevDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchOSDevDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3CBD35D1DBA404400F37D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3CBD35F1DBA404400F37D7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				B38697CB1DBA88D50071A7FD /* AnimationsController.swift */,
 				B38697CD1DBA8BEC0071A7FD /* LabelAnimController.swift */,
 				B38697CF1DBA90FC0071A7FD /* ButtonAnimController.swift */,
+				B3A762531DBAF92E008027BE /* CommunicationController.swift */,
 			);
 			path = "WatchOSDevDay WatchKit Extension";
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				B3CBD3851DBA404400F37D7D /* ExtensionDelegate.swift in Sources */,
 				B38697D01DBA90FC0071A7FD /* ButtonAnimController.swift in Sources */,
 				B3CBD3831DBA404400F37D7D /* InterfaceController.swift in Sources */,
+				B3A762541DBAF92E008027BE /* CommunicationController.swift in Sources */,
 				B3CBD39B1DBA45DE00F37D7D /* MyNavigationController.swift in Sources */,
 				B38697CC1DBA88D50071A7FD /* AnimationsController.swift in Sources */,
 				B38697CE1DBA8BEC0071A7FD /* LabelAnimController.swift in Sources */,
