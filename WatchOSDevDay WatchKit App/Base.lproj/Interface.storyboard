@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
@@ -39,7 +39,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219" y="350"/>
+            <point key="canvasLocation" x="165" y="350"/>
         </scene>
         <!--Animations-->
         <scene sceneID="a9x-g4-Xi7">
@@ -59,7 +59,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="467" y="350"/>
+            <point key="canvasLocation" x="467" y="105"/>
         </scene>
         <!--LabelAnim-->
         <scene sceneID="RfI-5T-oss">
@@ -90,7 +90,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="766" y="345"/>
+            <point key="canvasLocation" x="1230" y="27"/>
         </scene>
         <!--ButtonAnim-->
         <scene sceneID="9hC-aZ-qw5">
@@ -134,7 +134,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="766" y="638"/>
+            <point key="canvasLocation" x="1230" y="350"/>
         </scene>
         <!--Titulo Navigation-->
         <scene sceneID="Y4r-Ur-CQf">
@@ -153,7 +153,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="468" y="14"/>
+            <point key="canvasLocation" x="467" y="-207"/>
         </scene>
         <!--pagebased1-->
         <scene sceneID="tSA-qC-tuf">
@@ -164,7 +164,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="766" y="14"/>
+            <point key="canvasLocation" x="765" y="-207"/>
         </scene>
         <!--pagebased2-->
         <scene sceneID="ZDv-dA-Miq">
@@ -175,7 +175,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="993" y="14"/>
+            <point key="canvasLocation" x="992" y="-207"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -206,7 +206,30 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="477" y="886"/>
+            <point key="canvasLocation" x="467" y="501"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="pXI-ac-oou">
+            <objects>
+                <controller identifier="Notifications" id="bRc-et-YSE" customClass="CustomNotificationController" customModule="WatchOSDevDay_WatchKit_Extension">
+                    <items>
+                        <picker height="100" alignment="left" id="hhu-rV-rkL">
+                            <connections>
+                                <action selector="pickerChanged:" destination="bRc-et-YSE" id="wlA-9p-P5b"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Start" id="AH3-Aq-BOm">
+                            <connections>
+                                <action selector="startClick" destination="bRc-et-YSE" id="nej-im-IZL"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="picker" destination="hhu-rV-rkL" id="ual-pF-JDl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="466" y="840"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">

@@ -49,6 +49,9 @@ class InterfaceController: WKInterfaceController {
         case 2:
             pushController(withName: "Communication", context: nil)
             
+        case 3:
+            pushController(withName: "Notifications", context: nil)
+            
         default:
             print(":(")
             
