@@ -8,8 +8,9 @@
 
 import WatchKit
 import WatchConnectivity
+import UserNotifications
 
-class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
+class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUserNotificationCenterDelegate {
 
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
@@ -72,4 +73,15 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         }
         WKExtension.shared().rootInterfaceController?.presentAlert(withTitle: "Chegou", message: message["resp"] as! String?, preferredStyle: .alert, actions: [myAlert])
     }
+    
+    func askForNotificationPermission() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (authBool, error) in
+            if authBool {
+                UNUserNotificationCenter.current().delegate = self
+            }
+        }
+    }
+    
+    
+    
 }

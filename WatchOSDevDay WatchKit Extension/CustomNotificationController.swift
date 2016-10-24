@@ -28,6 +28,10 @@ class CustomNotificationController: WKInterfaceController {
         }
         
         picker.setItems(pickerItems)
+        
+        if let delegate = WKExtension.shared().delegate as? ExtensionDelegate {
+            delegate.askForNotificationPermission()
+        }
     }
     
     override func willActivate() {
