@@ -63,4 +63,13 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate {
         //WKExtension.shared().rootInterfaceController
         print("chegou mensagem no delegate")
     }
+    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        print("recebendo mensagem no delegate")
+        
+        let myAlert: WKAlertAction = WKAlertAction(title: "ok", style: .destructive) {
+            print("clicou")
+        }
+        WKExtension.shared().rootInterfaceController?.presentAlert(withTitle: "Chegou", message: message["resp"] as! String?, preferredStyle: .alert, actions: [myAlert])
+    }
 }

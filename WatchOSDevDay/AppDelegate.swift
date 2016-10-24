@@ -8,6 +8,7 @@
 
 import UIKit
 import WatchConnectivity
+import NotificationCenter
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
@@ -64,7 +65,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
         print(message)
-        replyHandler(["resp": "recebido"])
+        
+        let texto = message["message"]
+        
+        let notification = Notification(name: Notification.Name("myNotName"), object: texto, userInfo: nil)
+        
+        NotificationCenter.default.post(notification)
+        
+        
+        //replyHandler(["resp": "recebido"])
     }
 
 
