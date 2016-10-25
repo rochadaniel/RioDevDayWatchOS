@@ -77,6 +77,8 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, WCSessionDelegate, UNUse
     func askForNotificationPermission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { (authBool, error) in
             if authBool {
+            
+                
                 UNUserNotificationCenter.current().delegate = self
             }
         }
